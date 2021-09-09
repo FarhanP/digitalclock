@@ -1,60 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 
-
-*{
+* {
   box-sizing: border-box;
-  
 }
 
-.clock-section{
+.clock-section {
   display: flex;
   justify-content: center;
   align-content: center;
   margin-top: 23rem;
-  
 }
 
-#clock{
+#clock {
   padding: 2.75rem;
-  background: linear-gradient(to bottom right,rgb(109, 106, 106), black);
+  background: linear-gradient(to bottom right, rgb(109, 106, 106), black);
   width: 30%;
-  color:rgb(209, 35, 35);
+  color: rgb(209, 35, 35);
   box-shadow: 0 26px 41px 0 #d4dae0;
-  border: 4px solid black;
+  border: 4px solid white;
   border-radius: 20px;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 5.75rem; 
+  font-family: "Orbitron", sans-serif;
+  font-size: 5.75rem;
   text-align: center;
 }
-
 
 /* Responsive code for Mobile and tablets */
 
 @media (max-width: 40rem) {
-
-  .clock-section{
+  .clock-section {
     margin-top: 16rem;
   }
 
-  #clock{
-  padding: 2rem 17rem 2rem 2.75rem;
-  font-size: 2.75rem; 
+  #clock {
+    padding: 2rem 17rem 2rem 2.75rem;
+    font-size: 2.75rem;
   }
-
 }
 
-
 @media (min-width: 64rem) {
-
-  .clock-section{
+  .clock-section {
     margin-top: 20rem;
   }
 
-  #clock{
-  padding: 3rem 30rem 3rem 8rem;
-  font-size: 4.25rem;
+  #clock {
+    padding: 3rem 30rem 3rem 8rem;
+    font-size: 4.25rem;
   }
-
 }
-
-
