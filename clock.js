@@ -1,10 +1,23 @@
-let dateTime = document.getElementById('clock');
+let dateTime = document.getElementById("clock");
 
 // Shows current date and Time
 function showDateTime() {
   let currentDateTime = new Date();
-  dateTime.innerHTML = currentDateTime.getHours() + ':' + currentDateTime.getMinutes() + ':' + currentDateTime.getSeconds()
+  let hours =
+    currentDateTime.getHours < 10 || currentDateTime.getHours
+      ? "0" + currentDateTime.getHours()
+      : currentDateTime.getHours();
 
+  let mins =
+    currentDateTime.getMinutes() < 10
+      ? "0" + currentDateTime.getMinutes()
+      : currentDateTime.getMinutes();
+  let secs =
+    currentDateTime.getSeconds() < 10
+      ? "0" + currentDateTime.getSeconds()
+      : currentDateTime.getSeconds();
+
+  dateTime.innerHTML = hours + ":" + mins + ":" + secs;
 }
 
 // Interval method to update time LIVE
