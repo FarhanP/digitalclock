@@ -4,7 +4,7 @@ let dateTime = document.getElementById("clock");
 function showDateTime() {
   let currentDateTime = new Date();
   let hours =
-    currentDateTime.getHours < 10 || currentDateTime.getHours
+    currentDateTime.getHours() < 10
       ? "0" + currentDateTime.getHours()
       : currentDateTime.getHours();
 
