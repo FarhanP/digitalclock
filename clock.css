@@ -3,47 +3,52 @@
 * {
   box-sizing: border-box;
 }
-
-.clock-section {
+body {
   display: flex;
+  font-family: "Orbitron", sans-serif;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
-  margin-top: 23rem;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  padding: 1.5rem;
+}
+
+.container {
+  background: linear-gradient(to bottom right, rgb(109, 106, 106), black);
+  text-align: center;
+  box-shadow: 0 10px 41px 0 rgb(185, 224, 240);
+  border-radius: 20px;
+  max-height: 100%;
 }
 
 #clock {
-  padding: 2.75rem;
-  background: linear-gradient(to bottom right, rgb(109, 106, 106), black);
-  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: auto;
+  font-size: 3rem;
+  padding: 2rem;
   color: rgb(209, 35, 35);
-  box-shadow: 0 26px 41px 0 #d4dae0;
-  border: 2px solid white;
-  border-radius: 20px;
-  font-family: "Orbitron", sans-serif;
-  font-size: 5.75rem;
-  text-align: center;
 }
 
-/* Responsive code for Mobile and tablets */
+/* Media queries for Desktop/Tablets */
 
-@media (max-width: 40rem) {
-  .clock-section {
-    margin-top: 16rem;
+@media (min-width: 40rem) {
+  .container {
+    border-radius: 20px;
+    margin: 10rem;
   }
 
   #clock {
-    padding: 2rem 16rem 2rem 2.75rem;
-    font-size: 2.75rem;
+    font-size: 3.5rem;
   }
 }
 
-@media (min-width: 64rem) {
-  .clock-section {
-    margin-top: 20rem;
-  }
-
-  #clock {
-    padding: 3rem 30rem 3rem 8rem;
-    font-size: 4.25rem;
+@media (min-width: 1500px) {
+  .container {
+    margin: 40rem;
   }
 }
